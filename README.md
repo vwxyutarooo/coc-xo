@@ -1,18 +1,14 @@
 # coc-xo
 
+XO language server extension for coc.nvim.
 
+Forked from [coc-eslint](https://github.com/neoclide/coc-eslint) and [vscode-linter-xo](https://github.com/xojs/vscode-linter-xo).
+
+Note invoke eslint.showOutputChannel to invoke command of current eslint statusline.
 
 ## Install
 
 `:CocInstall coc-xo`
-
-## Keymaps
-
-`nmap <silent> <C-l> <Plug>(coc-coc-xo-keymap)`
-
-## Lists
-
-`:CocList demo_list`
 
 ## License
 
