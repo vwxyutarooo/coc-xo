@@ -2,6 +2,7 @@
 async function start(watch) {
   await require('esbuild').build({
     entryPoints: ['src/index.ts'],
+    define: { 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development') },
     bundle: true,
     watch,
     minify: process.env.NODE_ENV === 'production',
@@ -9,8 +10,8 @@ async function start(watch) {
     mainFields: ['module', 'main'],
     external: ['coc.nvim'],
     platform: 'node',
-    target: 'node10.12',
-    outfile: 'lib/index.js',
+    target: 'node12.16',
+    outdir: 'lib',
   });
 }
 
