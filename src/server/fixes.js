@@ -1,4 +1,4 @@
-import utils from './utils';
+import { computeKey } from './utils';
 
 export default class Fixes {
   constructor(edits) {
@@ -21,7 +21,7 @@ export default class Fixes {
   getScoped(diagnostics) {
     const result = [];
     for (const diagnostic of diagnostics) {
-      const key = utils.computeKey(diagnostic);
+      const key = computeKey(diagnostic);
       const editInfo = this.edits[key];
       if (editInfo) {
         result.push(editInfo);
