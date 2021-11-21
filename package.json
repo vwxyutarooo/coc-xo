@@ -18,7 +18,7 @@
     "build": "node esbuild.js && npm run build:server -- --minify && npm run build:server -- --minify",
     "build:dev": "NODE_ENV=development node esbuild.js && NODE_ENV=development npm run build:server -- --sourcemap",
     "build:server": "esbuild ./src/server/server.js --bundle --outfile=lib/server.js --external:vscode --format=cjs --platform=node",
-    "prepare": "node esbuild.js"
+    "prepare": "npm run build"
   },
   "prettier": {
     "singleQuote": true,
