@@ -4,6 +4,11 @@
   "description": "",
   "author": "vwxyutarooo <vwxyutaro.0110@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vwxyutarooo/coc-xo.git"
+  },
+  "homepage": "https://github.com/vwxyutarooo/coc-xo#readme",
   "main": "lib/index.js",
   "keywords": [
     "coc.nvim",
