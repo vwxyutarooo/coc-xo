@@ -4,7 +4,7 @@ XO language server extension for coc.nvim.
 
 Forked from [coc-eslint](https://github.com/neoclide/coc-eslint) and [vscode-linter-xo](https://github.com/xojs/vscode-linter-xo).
 
-Note invoke eslint.showOutputChannel to invoke command of current eslint statusline.
+Note invoke xo.showOutputChannel to invoke command of current xo statusline.
 
 ## Install
 
