@@ -21,7 +21,7 @@
     "lint": "eslint src --ext ts",
     "clean": "rimraf lib",
     "watch": "node esbuild.js --watch",
-    "build": "node esbuild.js && npm run build:server -- --minify && npm run build:server -- --minify",
+    "build": "node esbuild.js && npm run build:server -- --minify",
     "build:dev": "NODE_ENV=development node esbuild.js && NODE_ENV=development npm run build:server -- --sourcemap",
     "build:server": "esbuild ./src/server/server.js --bundle --outfile=lib/server.js --external:vscode --format=cjs --platform=node",
     "prepare": "npm run build"
