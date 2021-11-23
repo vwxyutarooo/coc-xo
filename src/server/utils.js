@@ -22,7 +22,7 @@ export function makeDiagnostic(problem) {
     source: 'XO',
     range: {
       start: { line: problem.line - 1, character: problem.column - 1 },
-      end: { line: problem.line - 1, character: problem.column - 1 },
+      end: { line: problem.endLine - 1, character: problem.endColumn - 1 },
     },
   };
 }
